@@ -1,0 +1,124 @@
+<!--Main Navigation-->
+<header class="intro-header">
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#/api/search"><strong>Page de recherche</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
+        aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+        <form >
+          
+          <div class="md-form my-0">
+              <a type="button" mdbBtn color="white" outline="true" class="wow fadeInLeft" data-wow-delay="0.3s" (click)="logout()">Déconnexion</a>
+            </div>
+      </form>
+        
+      </div>
+    </div>
+  </nav>
+
+  <!--Intro Section-->
+  <section class="view intro-2 rgba-gradient">
+    <div class="full-bg-img">
+      <div class="container flex-center">
+        <div class="row flex-center pt-5 mt-3">
+          
+            <!-- Extended material form grid -->
+            <div class="white-text">
+            <form>
+              <!-- Grid row -->
+              <div class="form-row">
+                <!-- Grid column -->
+                <div class="col-md-12">
+                  <!-- Material input -->
+                  <div class="md-form form-group">
+                    <input mdbInput type="text" class="form-control" id="inputSite4MD" name="site-input" placeholder="Veuillez entrer le site où vous voulez chercher" [(ngModel)]="data.site">
+                    <label for="inputSite4MD" >Site</label>
+                  </div>
+                  
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-12">
+                  <!-- Material input -->
+                  <div class="md-form form-group">
+                    <input mdbInput type="text" class="form-control" id="inputProfil4MD" name="profil-input" placeholder="Veuillez entrer le profil recherché" [(ngModel)]="data.profil">
+                    <label for="inputProfil4MD" >Profil recherché</label>
+                  </div>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+              <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-12">
+                  <div class="md-form form-group">
+              <select class="browser-default custom-select" name="select1" [(ngModel)]="data.operateur">
+                <option selected>Veuillez séléctionner</option>
+                <option value="AND">Et</option>
+                <option value="OR">Ou</option>
+                <option value="-">-(exclure)</option>
+                <option value="*">*</option>
+              </select>
+            </div>
+                </div>
+              </div>
+              <!-- Grid row -->
+              <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-12">
+                  <!-- Material input -->
+                  <div class="md-form form-group">
+                    <input mdbInput type="text" class="form-control" id="inputInfosMD" name="informations-input" placeholder="Ajoutez des informations à votre recherche" [(ngModel)]="data.infos">
+                    <label for="inputInfosMD">Informations supplémentaires</label>
+                  </div>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-12">
+                  <!-- Material input -->
+                  <div class="md-form form-group">
+                    <input mdbInput type="text" class="form-control" id="inputPaysMD" name="pays-input" placeholder="Pays" [(ngModel)]="data.pays">
+                    <label for="inputPaysMD">Pays</label>
+                  </div>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+              <div class="text-center">
+              <a type="submit" mdbBtn color="white" outline="true" class="wow fadeInLeft" data-wow-delay="0.3s" (click)="search()">chercher</a>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</header>
+<!--Main Navigation-->
+
+<!--Main Layout-->
+<main>
+
+  
+
+</main>
+<!--Main Layout-->
